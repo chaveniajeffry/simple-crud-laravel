@@ -19,8 +19,8 @@ Route::get('/', function () {
 });
 
 // Route::view([url], [blade])
-// Route::view('about', 'about');
-// Route::view('contact', 'contact');
+Route::view('about', 'about');
+Route::view('contact', 'contact');
 
 // Route::get("user","Users@index");
-Route::get('users/{user}',[Users::class,'loadView']);
+// Route::get('users/{user}',[Users::class,'loadView']);
